@@ -1,0 +1,281 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+minleeui-MacBookPro.local
+Darwin 19.6.0 x86_64
+$> date
+2021년 5월  7일 금요일 22시 47분 30초 KST
+$> gcc --version
+Apple clang version 12.0.0 (clang-1200.0.32.29)
+Target: x86_64-apple-darwin19.6.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple clang version 12.0.0 (clang-1200.0.32.29)
+Target: x86_64-apple-darwin19.6.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= libft.h=======================================================================
+$> norminette libft.h | grep -E '(Error|Warning)'
+norminette : command not found
+
+= Compiling libft ==============================================================
+$> make re
+rm -f 
+rm libft.a
+rm: libft.a: No such file or directory
+make: *** [fclean] Error 1
+
+$> make bonus
+make: *** No rule to make target `bonus'.  Stop.
+
+$> ls -la libft.a
+
+= Part1_functions ==============================================================
+
+= ft_memset.c ==================================================================
+$> norminette ft_memset.c | grep -E '(Error|Warning)'
+
+norminette : command not found
+
+$> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_memset.c main.c libft.a -o user_exe
+
+clang: error: no such file or directory: '/Users/minlee/Desktop/42seoul/42_cursus/libft/libft-war-machine-master/dirlibft/libft.a'
+
+= ft_bzero.c ===================================================================
+$> norminette ft_bzero.c | grep -E '(Error|Warning)'
+
+norminette : command not found
+
+$> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_bzero.c main.c libft.a -o user_exe
+
+clang: error: no such file or directory: '/Users/minlee/Desktop/42seoul/42_cursus/libft/libft-war-machine-master/dirlibft/libft.a'
+
+= ft_calloc.c ==================================================================
+Nothing turned in
+
+= ft_memcpy.c ==================================================================
+$> norminette ft_memcpy.c | grep -E '(Error|Warning)'
+
+norminette : command not found
+
+$> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_memcpy.c main.c libft.a -o user_exe
+
+clang: error: no such file or directory: '/Users/minlee/Desktop/42seoul/42_cursus/libft/libft-war-machine-master/dirlibft/libft.a'
+
+= ft_memccpy.c =================================================================
+Nothing turned in
+
+= ft_memmove.c =================================================================
+$> norminette ft_memmove.c | grep -E '(Error|Warning)'
+
+norminette : command not found
+
+$> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_memmove.c main.c libft.a -o user_exe
+
+clang: error: no such file or directory: '/Users/minlee/Desktop/42seoul/42_cursus/libft/libft-war-machine-master/dirlibft/libft.a'
+
+= ft_memchr.c ==================================================================
+$> norminette ft_memchr.c | grep -E '(Error|Warning)'
+
+norminette : command not found
+
+$> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_memchr.c main.c libft.a -o user_exe
+
+clang: error: no such file or directory: '/Users/minlee/Desktop/42seoul/42_cursus/libft/libft-war-machine-master/dirlibft/libft.a'
+
+= ft_memcmp.c ==================================================================
+$> norminette ft_memcmp.c | grep -E '(Error|Warning)'
+
+norminette : command not found
+
+$> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_memcmp.c main.c libft.a -o user_exe
+
+clang: error: no such file or directory: '/Users/minlee/Desktop/42seoul/42_cursus/libft/libft-war-machine-master/dirlibft/libft.a'
+
+= ft_strlen.c ==================================================================
+$> norminette ft_strlen.c | grep -E '(Error|Warning)'
+
+norminette : command not found
+
+$> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_strlen.c main.c libft.a -o user_exe
+
+clang: error: no such file or directory: '/Users/minlee/Desktop/42seoul/42_cursus/libft/libft-war-machine-master/dirlibft/libft.a'
+
+= ft_strdup.c ==================================================================
+Nothing turned in
+
+= ft_strlcat.c =================================================================
+$> norminette ft_strlcat.c | grep -E '(Error|Warning)'
+
+norminette : command not found
+
+$> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_strlcat.c main.c libft.a -o user_exe
+
+clang: error: no such file or directory: '/Users/minlee/Desktop/42seoul/42_cursus/libft/libft-war-machine-master/dirlibft/libft.a'
+
+= ft_strlcpy.c =================================================================
+Nothing turned in
+
+= ft_strchr.c ==================================================================
+$> norminette ft_strchr.c | grep -E '(Error|Warning)'
+
+norminette : command not found
+
+$> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_strchr.c main.c libft.a -o user_exe
+
+clang: error: no such file or directory: '/Users/minlee/Desktop/42seoul/42_cursus/libft/libft-war-machine-master/dirlibft/libft.a'
+
+= ft_strrchr.c =================================================================
+$> norminette ft_strrchr.c | grep -E '(Error|Warning)'
+
+norminette : command not found
+
+$> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_strrchr.c main.c libft.a -o user_exe
+
+clang: error: no such file or directory: '/Users/minlee/Desktop/42seoul/42_cursus/libft/libft-war-machine-master/dirlibft/libft.a'
+
+= ft_strnstr.c =================================================================
+$> norminette ft_strnstr.c | grep -E '(Error|Warning)'
+
+norminette : command not found
+
+$> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_strnstr.c main.c libft.a -o user_exe
+
+clang: error: no such file or directory: '/Users/minlee/Desktop/42seoul/42_cursus/libft/libft-war-machine-master/dirlibft/libft.a'
+
+= ft_strncmp.c =================================================================
+$> norminette ft_strncmp.c | grep -E '(Error|Warning)'
+
+norminette : command not found
+
+$> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_strncmp.c main.c libft.a -o user_exe
+
+clang: error: no such file or directory: '/Users/minlee/Desktop/42seoul/42_cursus/libft/libft-war-machine-master/dirlibft/libft.a'
+
+= ft_atoi.c ====================================================================
+Nothing turned in
+
+= ft_isalpha.c =================================================================
+$> norminette ft_isalpha.c | grep -E '(Error|Warning)'
+
+norminette : command not found
+
+$> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_isalpha.c main.c libft.a -o user_exe
+
+clang: error: no such file or directory: '/Users/minlee/Desktop/42seoul/42_cursus/libft/libft-war-machine-master/dirlibft/libft.a'
+
+= ft_isdigit.c =================================================================
+$> norminette ft_isdigit.c | grep -E '(Error|Warning)'
+
+norminette : command not found
+
+$> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_isdigit.c main.c libft.a -o user_exe
+
+clang: error: no such file or directory: '/Users/minlee/Desktop/42seoul/42_cursus/libft/libft-war-machine-master/dirlibft/libft.a'
+
+= ft_isalnum.c =================================================================
+$> norminette ft_isalnum.c | grep -E '(Error|Warning)'
+
+norminette : command not found
+
+$> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_isalnum.c main.c libft.a -o user_exe
+
+clang: error: no such file or directory: '/Users/minlee/Desktop/42seoul/42_cursus/libft/libft-war-machine-master/dirlibft/libft.a'
+
+= ft_isascii.c =================================================================
+$> norminette ft_isascii.c | grep -E '(Error|Warning)'
+
+norminette : command not found
+
+$> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_isascii.c main.c libft.a -o user_exe
+
+clang: error: no such file or directory: '/Users/minlee/Desktop/42seoul/42_cursus/libft/libft-war-machine-master/dirlibft/libft.a'
+
+= ft_isprint.c =================================================================
+$> norminette ft_isprint.c | grep -E '(Error|Warning)'
+
+norminette : command not found
+
+$> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_isprint.c main.c libft.a -o user_exe
+
+clang: error: no such file or directory: '/Users/minlee/Desktop/42seoul/42_cursus/libft/libft-war-machine-master/dirlibft/libft.a'
+
+= ft_toupper.c =================================================================
+$> norminette ft_toupper.c | grep -E '(Error|Warning)'
+
+norminette : command not found
+
+$> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_toupper.c main.c libft.a -o user_exe
+
+clang: error: no such file or directory: '/Users/minlee/Desktop/42seoul/42_cursus/libft/libft-war-machine-master/dirlibft/libft.a'
+
+= ft_tolower.c =================================================================
+$> norminette ft_tolower.c | grep -E '(Error|Warning)'
+
+norminette : command not found
+
+$> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_tolower.c main.c libft.a -o user_exe
+
+clang: error: no such file or directory: '/Users/minlee/Desktop/42seoul/42_cursus/libft/libft-war-machine-master/dirlibft/libft.a'
+
+= Part2_functions ==============================================================
+
+= ft_strmapi.c =================================================================
+Nothing turned in
+
+= ft_substr.c ==================================================================
+Nothing turned in
+
+= ft_strjoin.c =================================================================
+Nothing turned in
+
+= ft_strtrim.c =================================================================
+Nothing turned in
+
+= ft_split.c ===================================================================
+Nothing turned in
+
+= ft_itoa.c ====================================================================
+Nothing turned in
+
+= ft_putchar_fd.c ==============================================================
+Nothing turned in
+
+= ft_putstr_fd.c ===============================================================
+Nothing turned in
+
+= ft_putendl_fd.c ==============================================================
+Nothing turned in
+
+= ft_putnbr_fd.c ===============================================================
+Nothing turned in
+
+= Bonus_functions ==============================================================
+
+= ft_lstnew_bonus.c ============================================================
+Nothing turned in
+
+= ft_lstdelone_bonus.c =========================================================
+Nothing turned in
+
+= ft_lstclear_bonus.c ==========================================================
+Nothing turned in
+
+= ft_lstadd_front_bonus.c ======================================================
+Nothing turned in
+
+= ft_lstadd_back_bonus.c =======================================================
+Nothing turned in
+
+= ft_lstsize_bonus.c ===========================================================
+Nothing turned in
+
+= ft_lstiter_bonus.c ===========================================================
+Nothing turned in
+
+= ft_lstmap_bonus.c ============================================================
+Nothing turned in
+
+= ft_lstlast_bonus.c ===========================================================
+Nothing turned in
