@@ -3,7 +3,7 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: daelee <minlee@student.42seoul.kr>         +#+  +:+       +#+         #
+#    By: minlee <minlee@student.42seoul.kr>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/03/09 18:24:09 by daelee            #+#    #+#              #
 #    Updated: 2021/05/11 19:16:27 by minlee           ###   ########.fr        #

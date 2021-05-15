@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-int		func(char *str, const char *to_find, size_t len)
+static int	func(const char *str, const char *to_find, size_t len)
 {
 	size_t	n;
 	int		m;
@@ -41,12 +41,12 @@ int		func(char *str, const char *to_find, size_t len)
 	return (n);
 }
 
-char	*ft_strnstr(char *str, const char *to_find, size_t len)
+char	*ft_strnstr(const char *str, const char *to_find, size_t len)
 {
 	int		n;
 
 	if (*to_find == '\0')
-		return (str);
+		return (char *)(str);
 	n = func(str, to_find, len);
 	if (n == -1 || len == 0)
 		return (0);
@@ -54,6 +54,6 @@ char	*ft_strnstr(char *str, const char *to_find, size_t len)
 	{
 		if (str[n] == '\0')
 			return (0);
-		return (str + n);
+		return (char *)(str + n);
 	}
 }
