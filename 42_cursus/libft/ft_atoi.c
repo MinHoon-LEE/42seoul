@@ -6,11 +6,9 @@
 /*   By: minlee <minlee@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/24 17:43:05 by minlee            #+#    #+#             */
-/*   Updated: 2021/05/11 17:11:43 by minlee           ###   ########.fr       */
+/*   Updated: 2021/05/13 14:44:34 by minlee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 static long long	calculate(unsigned long long sum, int count, int minus)
 {

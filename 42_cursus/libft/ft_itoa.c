@@ -6,13 +6,13 @@
 /*   By: minlee <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/11 18:53:36 by minlee            #+#    #+#             */
-/*   Updated: 2021/05/11 19:07:20 by minlee           ###   ########.fr       */
+/*   Updated: 2021/05/13 15:18:11 by minlee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		count1(int tmp)
+static int	count1(int tmp)
 {
 	int		count;
 
@@ -27,7 +27,7 @@ int		count1(int tmp)
 	return (count);
 }
 
-void	calculate(char *ptr, int n, int count, int minus)
+static void	calculate(char *ptr, int n, int count, int minus)
 {
 	while (n != 0)
 	{
@@ -37,7 +37,7 @@ void	calculate(char *ptr, int n, int count, int minus)
 	}
 }
 
-char	*ft_itoa(int n)
+char		*ft_itoa(int n)
 {
 	int		count;
 	char	*ptr;

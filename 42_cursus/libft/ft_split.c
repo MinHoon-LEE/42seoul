@@ -6,13 +6,13 @@
 /*   By: minlee <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/08 22:38:14 by minlee            #+#    #+#             */
-/*   Updated: 2021/05/11 20:52:07 by minlee           ###   ########.fr       */
+/*   Updated: 2021/05/13 15:20:54 by minlee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int		is_count(char const *str, char charset)
+static int	is_count(char const *str, char charset)
 {
 	int		n;
 	int		count;
@@ -40,7 +40,7 @@ static int	remove(char **arr)
 	unsigned int i;
 
 	i = 0;
-	while(arr[i])
+	while (arr[i])
 	{
 		free(arr[i]);
 		i++;
@@ -63,13 +63,11 @@ static void	insert(char *arr, char const *str, int n, int m)
 	arr[a] = '\0';
 }
 
-static  int		ff(char **arr, char const *str, char charset)
+static int	ff(char **arr, char const *str, char charset, int i)
 {
 	int		n;
 	int		m;
-	int		i;
 
-	i = 0;
 	n = 0;
 	m = -1;
 	while (str[++m] != '\0')
@@ -78,7 +76,7 @@ static  int		ff(char **arr, char const *str, char charset)
 			if (m - n > 0)
 			{
 				if ((arr[i] = malloc(sizeof(char) * (m - n + 1))) == 0)
-					return(remove(arr));
+					return (remove(arr));
 				insert(arr[i], str, n, m);
 				i++;
 			}
@@ -87,13 +85,13 @@ static  int		ff(char **arr, char const *str, char charset)
 	if (m - n > 0)
 	{
 		if ((arr[i] = malloc(sizeof(char) * (m - n + 1))) == 0)
-			return (remove(arr)); 
+			return (remove(arr));
 		insert(arr[i], str, n, m);
 	}
 	return (1);
 }
 
-char	**ft_split(char const *str, char charset)
+char		**ft_split(char const *str, char charset)
 {
 	int		count;
 	char	**arr;
@@ -105,7 +103,7 @@ char	**ft_split(char const *str, char charset)
 	arr = (char **)malloc(sizeof(char *) * (count + 1));
 	if (arr == 0)
 		return (0);
-	n = ff(arr, str, charset);
+	n = ff(arr, str, charset, 0);
 	if (n == 0)
 		return (NULL);
 	arr[count] = 0;

@@ -6,7 +6,7 @@
 /*   By: minlee <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/10 22:27:22 by minlee            #+#    #+#             */
-/*   Updated: 2021/05/11 21:19:13 by minlee           ###   ########.fr       */
+/*   Updated: 2021/05/13 15:21:50 by minlee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 	if (lst == 0 || new == 0)
 		return ;
 	if (*lst == 0)
-        *lst = new;
+		*lst = new;
 	else
 	{
 		tmp = ft_lstlast(*lst);

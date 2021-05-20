@@ -6,7 +6,7 @@
 /*   By: minlee <minlee@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/24 17:31:59 by minlee            #+#    #+#             */
-/*   Updated: 2021/05/11 19:42:51 by minlee           ###   ########.fr       */
+/*   Updated: 2021/05/13 15:23:43 by minlee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ static int	func(const char *str, const char *to_find, size_t len)
 	return (n);
 }
 
-char	*ft_strnstr(const char *str, const char *to_find, size_t len)
+char		*ft_strnstr(const char *str, const char *to_find, size_t len)
 {
 	int		n;
 
