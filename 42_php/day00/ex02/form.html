@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title><h1>minlee</h1></title>
+	</head>
+
+	<script>
+		function displayFormContents() {
+
+			var out = '';
+
+			out += 'Firstname = ' + document.getElementById('firstname').value + '\n';
+			out += 'Name = '      + document.getElementById('name').value      + '\n';
+			out += 'Phone = '     + document.getElementById('phone').value     + '\n';
+			out += 'Age = '       + document.getElementById('age').value       + '\n';
+			out += 'Email = '     + document.getElementById('email').value     + '\n';
+
+			out += 'Gender = ';
+			if (document.getElementById('gender_male').checked == true)
+				out += document.getElementById('gender_male').value;
+			if (document.getElementById('gender_female').checked == true)
+				out += document.getElementById('gender_female').value;
+			if (document.getElementById('gender_other').checked == true)
+				out += document.getElementById('gender_other').value;
+			out += '\n';
+
+			if (document.getElementById('student').checked == true)
+				out += 'Student at 42 = yes';
+			else
+				out += 'Student at 42 = no';
+
+			alert(out);
+
+		}
+	</script>
+	<body>
+		<form>
+			<fieldset style = "margin-right:900px">
+				<legend>Submit Your Profile</legend>
+				First name : <input type="text" Id="firstname"><br>
+				Name : <input type="text"  Id="name"><br>
+				Age : <input type="number" Id="age"><br>
+				Phone : <input type="tel" placeholder="xxx-xxxx-xxxx" Id="phone" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"required></br>
+				Email : <input type="email" placeholder="xxxx@xxxxxx" Id="email"><br>
+				Stduent at 42 ? : <input type="checkbox" Id="student"><br>
+				Male : <input type="radio" Id="gender_male" name ="gender">
+				Female : <input type="radio" Id="gender_female" name ="gender">
+				Other : <input type="radio" Id="gender_other"name ="gender" ><br>
+				<button type="submit" OnClick = displayFormContents()>SUBMIT</button>
+			</fieldset>
+		</form>
+	</body>
+
+</html>
